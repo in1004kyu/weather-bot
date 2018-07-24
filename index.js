@@ -1,16 +1,3 @@
-const express = require("express")
-const app = express();
-const PORT = process.env.PORT
-app.get("/", (req, res) => {
-    res.send({ hello: "world" });
-});
-
-app.listen(PORT);
-
-
-
-
-
 var schedule = require('node-schedule');
 const { RTMClient, WebClient } = require('@slack/client');
 var weather = require('weather-js');
